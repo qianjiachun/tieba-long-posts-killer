@@ -6,6 +6,7 @@
 // @description  屏蔽、缩短百度贴吧超长评论（超过50行）
 // @author       小淳
 // @match			*://tieba.baidu.com/p/*
+// @license MIT
 // ==/UserScript==
 
 const MAX_LINE = 50; // 帖子最大行数，超过这个值将会被缩短
