@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         屏蔽百度贴吧超长评论
 // @namespace    https://github.com/qianjiachun
-// @version      2022.09.29.01
+// @version      2022.09.29.02
 // @description  屏蔽、缩短百度贴吧超长评论（超过50行）
 // @author       小淳
 // @match			*://tieba.baidu.com/p/*
@@ -17,6 +17,7 @@ function init() {
     if (dom.length > 0) {
       clearInterval(timer);
       killLongPosts();
+      setInterval(killLongPosts, 1500);
     }
   }, 300);
 }
